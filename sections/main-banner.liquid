@@ -1,0 +1,78 @@
+{%- assign forge_hero_heading     = section.settings.heading | default: "From Crop to Cup. Every Morning." -%}
+{%- assign forge_hero_sub         = section.settings.subheading | default: "artisan · craft · warm — made for Coffee enthusiasts and third-wave coffee." -%}
+{%- assign forge_hero_bg          = "#2C1810" -%}
+{%- assign forge_hero_text        = "#FFFFFF" -%}
+{%- assign forge_hero_accent      = "#F4EBD9" -%}
+{%- assign forge_hero_btn1_label  = "Explore the Blends" -%}
+{%- assign forge_hero_btn1_url    = "/collections/all" -%}
+{%- assign forge_hero_btn2_label  = "Our Story →" -%}
+{%- assign forge_hero_btn2_url    = "/pages/our-story" -%}
+{%- assign forge_hero_scroll_hint = "Scroll to explore" -%}
+{%- assign forge_hero_session_key = "grounds_intro_v1" -%}
+{%- assign forge_content_bg       = "#F4EBD9" -%}
+{%- assign forge_hero_video_url   = section.settings.video_url -%}
+{%- assign forge_hero_image       = section.settings.image -%}
+{%- assign forge_hero_bg_image    = section.settings.background_image -%}
+
+{%- render 'forge-scroll-hero' -%}
+
+<style>
+  html.forge-intro-init .fsh { background: #7c4a2e !important; }
+  html.forge-intro-init .section-header { transform: translateY(-110%) !important; }
+  html.forge-intro-init .fsh__media-wrap { opacity: 0 !important; transform: translate(-50%, calc(-50% + 40px)) !important; }
+  html.forge-intro-init .fsh__titles { opacity: 0 !important; filter: blur(10px) !important; }
+  html.forge-intro-init .fsh__hint { opacity: 0 !important; }
+  html.forge-intro-init.forge-intro-play .section-header { transition: transform 0.8s cubic-bezier(0.16,1,0.3,1) 0.2s !important; }
+  html.forge-intro-init.forge-intro-play .fsh__media-wrap { transition: opacity 0.55s ease 0.5s, transform 0.55s cubic-bezier(0.34,1.56,0.64,1) 0.5s !important; }
+  html.forge-intro-init.forge-intro-play .fsh__titles { transition: opacity 0.5s ease 0.9s, filter 0.5s ease 0.9s !important; }
+  html.forge-intro-init.forge-intro-play .fsh__hint { transition: opacity 0.4s ease 1.3s !important; }
+  html.forge-intro-play .section-header { transform: translateY(0) !important; }
+  html.forge-intro-play .fsh__media-wrap { opacity: 1 !important; transform: translate(-50%,-50%) !important; }
+  html.forge-intro-play .fsh__titles { opacity: 1 !important; filter: blur(0px) !important; }
+  html.forge-intro-play .fsh__hint { opacity: 1 !important; }
+</style>
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "Video URL (.mp4)",
+      "info": "Optional video background for the hero media box"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Hero image (fallback)",
+      "info": "Used if no video is provided, or as video poster"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image",
+      "info": "Full-screen background image visible during scroll expansion"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "From Crop to Cup. Every Morning."
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "artisan · craft · warm — made for Coffee enthusiasts and third-wave coffee."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Banner"
+    }
+  ]
+}
+{% endschema %}
