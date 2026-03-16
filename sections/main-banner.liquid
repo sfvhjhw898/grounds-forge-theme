@@ -1,5 +1,5 @@
 {%- assign forge_hero_heading     = section.settings.heading | default: "From Crop to Cup. Every Morning." -%}
-{%- assign forge_hero_sub         = section.settings.subheading | default: "artisan · craft · warm — made for Coffee enthusiasts and third-wave coffee." -%}
+{%- assign forge_hero_sub         = section.settings.subheading | default: "artisan · organic · warm — made for Coffee enthusiasts aged 25-45." -%}
 {%- assign forge_hero_bg          = "#2C1810" -%}
 {%- assign forge_hero_text        = "#FFFFFF" -%}
 {%- assign forge_hero_accent      = "#F4EBD9" -%}
@@ -10,7 +10,7 @@
 {%- assign forge_hero_scroll_hint = "Scroll to explore" -%}
 {%- assign forge_hero_session_key = "grounds_intro_v1" -%}
 {%- assign forge_content_bg       = "#F4EBD9" -%}
-{%- assign forge_hero_video_url   = section.settings.video_url -%}
+{%- assign forge_hero_video       = section.settings.video_url -%}
 {%- assign forge_hero_image       = section.settings.image -%}
 {%- assign forge_hero_bg_image    = section.settings.background_image -%}
 
@@ -42,19 +42,19 @@
       "type": "text",
       "id": "video_url",
       "label": "Video URL (.mp4)",
-      "info": "Optional video background for the hero media box"
+      "info": "Direct link to MP4 video file"
     },
     {
       "type": "image_picker",
       "id": "image",
       "label": "Hero image (fallback)",
-      "info": "Used if no video is provided, or as video poster"
+      "info": "Used if no video is provided"
     },
     {
       "type": "image_picker",
       "id": "background_image",
       "label": "Background image",
-      "info": "Full-screen background image visible during scroll expansion"
+      "info": "Visible during scroll expansion"
     },
     {
       "type": "text",
@@ -66,7 +66,7 @@
       "type": "textarea",
       "id": "subheading",
       "label": "Subheading",
-      "default": "artisan · craft · warm — made for Coffee enthusiasts and third-wave coffee."
+      "default": "artisan · organic · warm — made for Coffee enthusiasts aged 25-45."
     }
   ],
   "presets": [
