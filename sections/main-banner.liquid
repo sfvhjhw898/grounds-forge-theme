@@ -1,5 +1,5 @@
 {%- assign forge_hero_heading     = section.settings.heading | default: "From Crop to Cup. Every Morning." -%}
-{%- assign forge_hero_sub         = section.settings.subheading | default: "artisan · organic · warm — made for Coffee enthusiasts aged 25-45." -%}
+{%- assign forge_hero_sub         = section.settings.subheading | default: "artisan · craft · warm — made for Coffee enthusiasts and third-wave coffee." -%}
 {%- assign forge_hero_bg          = "#2C1810" -%}
 {%- assign forge_hero_text        = "#FFFFFF" -%}
 {%- assign forge_hero_accent      = "#F4EBD9" -%}
@@ -42,19 +42,19 @@
       "type": "text",
       "id": "video_url",
       "label": "Video URL (.mp4)",
-      "info": "Direct link to MP4 video file"
+      "info": "Optional video for hero media box"
     },
     {
       "type": "image_picker",
       "id": "image",
       "label": "Hero image (fallback)",
-      "info": "Used if no video is provided"
+      "info": "Displayed in the expanding media box"
     },
     {
       "type": "image_picker",
       "id": "background_image",
       "label": "Background image",
-      "info": "Visible during scroll expansion"
+      "info": "Full-screen background behind the hero"
     },
     {
       "type": "text",
@@ -66,7 +66,7 @@
       "type": "textarea",
       "id": "subheading",
       "label": "Subheading",
-      "default": "artisan · organic · warm — made for Coffee enthusiasts aged 25-45."
+      "default": "artisan · craft · warm — made for Coffee enthusiasts and third-wave coffee."
     }
   ],
   "presets": [
