@@ -29,11 +29,11 @@
         },
         "scheme-3": {
           "settings": {
-            "background": "#5A3A2A",
+            "background": "#5C3A2E",
             "background_gradient": "",
             "text": "#F4EBD9",
             "button": "#F4EBD9",
-            "button_label": "#2C1810",
+            "button_label": "#5C3A2E",
             "secondary_button_label": "#F4EBD9",
             "shadow": "#2C1810"
           }
@@ -61,7 +61,7 @@
           }
         }
       },
-      "type_header_font": "libre_baskerville_n4",
+      "type_header_font": "work_sans_n6",
       "heading_scale": 100,
       "type_body_font": "work_sans_n4",
       "body_scale": 100,
