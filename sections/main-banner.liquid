@@ -1,77 +1,79 @@
-{%- assign forge_hero_heading     = section.settings.heading | default: "From Crop to Cup. Every Morning." -%}
-{%- assign forge_hero_sub         = section.settings.subheading | default: "artisan · craft · warm — made for Coffee enthusiasts and third-wave coffee." -%}
-{%- assign forge_hero_bg          = "#2C1810" -%}
-{%- assign forge_hero_text        = "#FFFFFF" -%}
-{%- assign forge_hero_accent      = "#F4EBD9" -%}
-{%- assign forge_hero_btn1_label  = "Explore the Blends" -%}
-{%- assign forge_hero_btn1_url    = "/collections/all" -%}
-{%- assign forge_hero_btn2_label  = "Our Story →" -%}
-{%- assign forge_hero_btn2_url    = "/pages/our-story" -%}
-{%- assign forge_hero_scroll_hint = "Scroll to explore" -%}
-{%- assign forge_hero_session_key = "grounds_intro_v1" -%}
-{%- assign forge_content_bg       = "#F4EBD9" -%}
-{%- assign forge_hero_video       = section.settings.video_url -%}
-{%- assign forge_hero_image       = section.settings.image -%}
-{%- assign forge_hero_bg_image    = section.settings.background_image -%}
+<section class="grounds-hero" style="position:relative;min-height:100svh;background:#2C1810;overflow:hidden;">
+  
+  <div aria-hidden="true" style="position:absolute;bottom:-0.12em;left:-0.03em;font-family:'Playfair Display',Georgia,serif;font-size:clamp(100px,16vw,260px);font-weight:400;font-style:italic;color:rgba(139,69,19,0.07);line-height:1;pointer-events:none;z-index:0;user-select:none;white-space:nowrap;">Grounds</div>
 
-{%- render 'forge-scroll-hero' -%}
+  <div class="grounds-hero-grid" style="display:grid;grid-template-columns:1fr 1fr;min-height:100svh;position:relative;z-index:1;">
+    
+    <div style="display:flex;flex-direction:column;padding:clamp(40px,6vw,100px) clamp(32px,5vw,72px);">
+      
+      <span style="display:inline-block;font-family:'Source Serif 4',Georgia,serif;font-size:10px;letter-spacing:0.32em;text-transform:uppercase;color:#8B4513;border:1px solid rgba(139,69,19,0.45);padding:6px 14px;align-self:flex-start;margin-bottom:auto;margin-top:0;">Est. MMX · Single Origin</span>
+
+      <div style="margin-top:auto;width:100%;">
+        <h1 style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(46px,5.8vw,82px);font-weight:400;font-style:italic;color:#F4EBD9;line-height:1.06;letter-spacing:-0.01em;margin:0 0 24px;">{{ section.settings.heading | default: "From Crop to Cup." }}</h1>
+        
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;">
+          <div style="height:1px;width:44px;background:#8B4513;flex-shrink:0;"></div>
+          <span style="font-family:'Source Serif 4',Georgia,serif;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(244,235,217,0.45);">Every Morning</span>
+        </div>
+        
+        <p style="font-family:'Source Serif 4',Georgia,serif;font-size:14px;line-height:1.85;color:rgba(244,235,217,0.62);margin:0 0 36px;max-width:340px;">{{ section.settings.subheading | default: "Ethically sourced. Obsessively roasted. Delivered before sunrise." }}</p>
+        
+        <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;padding-bottom:clamp(40px,6vw,100px);">
+          <a href="/collections/all" style="background:#8B4513;color:#F4EBD9;text-decoration:none;padding:14px 34px;font-family:'Source Serif 4',Georgia,serif;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;transition:background 0.25s,color 0.25s;">Shop Blends →</a>
+          <a href="/pages/our-story" style="color:rgba(244,235,217,0.62);text-decoration:none;font-family:'Source Serif 4',Georgia,serif;font-size:11px;letter-spacing:0.1em;border-bottom:1px solid rgba(244,235,217,0.25);padding-bottom:2px;transition:color 0.2s;">Our Story</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="position:relative;overflow:hidden;">
+      {%- if section.settings.image -%}
+        <img src="{{ section.settings.image | image_url: width: 1600 }}" alt="GROUNDS coffee" loading="eager" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
+      {%- endif -%}
+      <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(44,24,16,0.4) 0%, transparent 35%);"></div>
+      <div style="position:absolute;top:40px;right:40px;text-align:right;">
+        <span style="font-family:'Source Serif 4',Georgia,serif;font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(244,235,217,0.55);">Specialty · Grade A</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
 
 <style>
-  html.forge-intro-init .fsh { background: #7c4a2e !important; }
-  html.forge-intro-init .section-header { transform: translateY(-110%) !important; }
-  html.forge-intro-init .fsh__media-wrap { opacity: 0 !important; transform: translate(-50%, calc(-50% + 40px)) !important; }
-  html.forge-intro-init .fsh__titles { opacity: 0 !important; filter: blur(10px) !important; }
-  html.forge-intro-init .fsh__hint { opacity: 0 !important; }
-  html.forge-intro-init.forge-intro-play .section-header { transition: transform 0.8s cubic-bezier(0.16,1,0.3,1) 0.2s !important; }
-  html.forge-intro-init.forge-intro-play .fsh__media-wrap { transition: opacity 0.55s ease 0.5s, transform 0.55s cubic-bezier(0.34,1.56,0.64,1) 0.5s !important; }
-  html.forge-intro-init.forge-intro-play .fsh__titles { transition: opacity 0.5s ease 0.9s, filter 0.5s ease 0.9s !important; }
-  html.forge-intro-init.forge-intro-play .fsh__hint { transition: opacity 0.4s ease 1.3s !important; }
-  html.forge-intro-play .section-header { transform: translateY(0) !important; }
-  html.forge-intro-play .fsh__media-wrap { opacity: 1 !important; transform: translate(-50%,-50%) !important; }
-  html.forge-intro-play .fsh__titles { opacity: 1 !important; filter: blur(0px) !important; }
-  html.forge-intro-play .fsh__hint { opacity: 1 !important; }
+@media (max-width: 989px) {
+  .grounds-hero-grid { grid-template-columns: 1fr !important; }
+  .grounds-hero-grid > div:last-child { min-height: 52vh; }
+  .grounds-hero-grid > div:first-child { padding: 48px 28px 52px !important; }
+}
+.grounds-hero a[href="/collections/all"]:hover { background: #6B3410 !important; }
+.grounds-hero a[href="/pages/our-story"]:hover { color: #F4EBD9 !important; }
 </style>
 
 {% schema %}
 {
-  "name": "Hero Banner",
-  "tag": "section",
-  "class": "section",
+  "name": "Banner",
   "settings": [
-    {
-      "type": "text",
-      "id": "video_url",
-      "label": "Video URL (.mp4)",
-      "info": "Direct link to .mp4 file for hero video"
-    },
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Hero image (fallback)",
-      "info": "Used when video is not available or on mobile"
-    },
-    {
-      "type": "image_picker",
-      "id": "background_image",
-      "label": "Background image",
-      "info": "Full-screen background image that fades as hero expands"
+      "label": "Coffee hero photograph"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "From Crop to Cup. Every Morning."
+      "default": "From Crop to Cup."
     },
     {
       "type": "textarea",
       "id": "subheading",
       "label": "Subheading",
-      "default": "artisan · craft · warm — made for Coffee enthusiasts and third-wave coffee."
+      "default": "Ethically sourced. Obsessively roasted. Delivered before sunrise."
     }
   ],
   "presets": [
     {
-      "name": "Hero Banner"
+      "name": "Banner"
     }
   ]
 }
