@@ -13,7 +13,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>GROUNDS is a artisan coffee brand with a editorial warm artisan craft aesthetic.</p>",
+            "text": "<p>Specialty coffee roasted in Yorkshire. From crop to cup.</p>",
             "text_style": "body"
           }
         }
@@ -43,21 +43,21 @@
         "col_1": {
           "type": "column",
           "settings": {
-            "title": "artisan",
-            "text": "We put artisan first in every decision we make."
+            "title": "editorial",
+            "text": "We put editorial first in every decision we make."
           }
         },
         "col_2": {
           "type": "column",
           "settings": {
-            "title": "craft",
-            "text": "craft is not a buzzword for us — it's how we work."
+            "title": "warm",
+            "text": "warm is not a buzzword for us — it's how we work."
           }
         },
         "col_3": {
           "type": "column",
           "settings": {
-            "title": "warm",
+            "title": "artisan",
             "text": "We are transparent about how we make things and who we make them for."
           }
         }
@@ -86,7 +86,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "\"Premium artisan coffee with a editorial design philosophy.\"",
+            "heading": "\"Single Origin · Roasted in Yorkshire · Ethically Sourced · Specialty\"",
             "heading_size": "h2"
           }
         }
