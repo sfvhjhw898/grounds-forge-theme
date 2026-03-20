@@ -1,51 +1,16 @@
 {
   "sections": {
     "forge_hero": {
-      "type": "image-banner",
+      "type": "forge-scroll-hero",
       "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "image_behavior": "none",
-        "show_text_box": true,
-        "desktop_content_position": "middle-left",
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-1",
-        "mobile_content_alignment": "left",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      },
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "From Crop to Cup.",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "editorial · warm · artisan — made for Coffee enthusiasts aged 22-40 who appreciate.",
-            "text_style": "subtitle"
-          }
-        },
-        "buttons": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Coffee",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "Our Story →",
-            "button_link_2": "shopify://pages/our-story",
-            "button_style_secondary_2": true
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "buttons"
-      ]
+        "heading": "From Crop to Cup.",
+        "subheading": "editorial · warm · artisan — made for Coffee enthusiasts aged 22-40 who appreciate.",
+        "scroll_hint": "Scroll to explore",
+        "button_label_1": "Shop Coffee",
+        "button_link_1": "shopify://collections/all",
+        "button_label_2": "Our Story",
+        "button_link_2": "shopify://pages/our-story"
+      }
     },
     "brand_values": {
       "type": "rich-text",
@@ -69,98 +34,78 @@
         "padding_bottom": 24
       }
     },
-    "forge_showcase": {
+    "process_steps": {
       "type": "multicolumn",
       "blocks": {
-        "stack_1": {
+        "step_1": {
           "type": "column",
           "settings": {
-            "title": "Single Origin",
-            "text": "Explore our single origin — the latest from GROUNDS."
+            "title": "01 — Source",
+            "text": "<p>We travel to origin to select only the finest single-estate lots. Direct relationships with farmers mean better coffee and better pay.</p>"
           }
         },
-        "stack_2": {
+        "step_2": {
           "type": "column",
           "settings": {
-            "title": "Blends",
-            "text": "The blends range. Core pieces worth keeping."
+            "title": "02 — Roast",
+            "text": "<p>Every batch is roasted to order in our Yorkshire roastery. Never more than 48 hours between roast and dispatch — always at peak flavour.</p>"
           }
         },
-        "stack_3": {
+        "step_3": {
           "type": "column",
           "settings": {
-            "title": "Gift Sets",
-            "text": "Perfectly presented gifts from GROUNDS."
+            "title": "03 — Deliver",
+            "text": "<p>Sealed in nitrogen-flushed, compostable bags and dispatched same day. From our roastery to your cup, nothing wasted.</p>"
           }
         }
       },
       "block_order": [
-        "stack_1",
-        "stack_2",
-        "stack_3"
+        "step_1",
+        "step_2",
+        "step_3"
       ],
       "settings": {
-        "title": "Shop the Range",
+        "title": "From Crop to Cup",
         "heading_size": "h2",
         "image_width": "third",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "View All",
-        "button_link": "shopify://collections/all",
-        "color_scheme": "scheme-3",
+        "button_label": "Explore Our Origins",
+        "button_link": "shopify://pages/our-story",
+        "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 72,
         "padding_bottom": 72
       }
     },
-    "forge_features": {
-      "type": "multicolumn",
-      "blocks": {
-        "col_1": {
-          "type": "column",
-          "settings": {
-            "title": "Editorial",
-            "text": "GROUNDS starts with editorial as the foundation for everything we do."
-          }
-        },
-        "col_2": {
-          "type": "column",
-          "settings": {
-            "title": "Warm",
-            "text": "Every artisan product is built with warm at the centre."
-          }
-        },
-        "col_3": {
-          "type": "column",
-          "settings": {
-            "title": "Artisan",
-            "text": "artisan matters. We don't ship anything we wouldn't keep for ourselves."
-          }
-        }
-      },
-      "block_order": [
-        "col_1",
-        "col_2",
-        "col_3"
-      ],
+    "forge_bento": {
+      "type": "forge-bento",
       "settings": {
-        "title": "Why Our Coffee Tastes Different",
-        "heading_size": "h2",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "heading": "Why Our Coffee Tastes Different",
+        "subheading": "GROUNDS — editorial, warm, artisan.",
+        "story_link": "shopify://pages/our-story",
         "padding_top": 72,
-        "padding_bottom": 72
+        "padding_bottom": 72,
+        "cell_1_eyebrow": "The Specialty Standard",
+        "cell_1_heading": "From Crop to Cup, Nothing Lost.",
+        "cell_1_body": "GROUNDS sources single-origin beans directly from farming cooperatives, paying premium prices for exceptional quality. Every batch is roasted in Yorkshire within 48 hours of your order.",
+        "cell_1_cta": "Explore Our Origins →",
+        "cell_2_heading": "Single Origin",
+        "cell_2_body": "Traceable to the farm, the harvest, the producer. Know exactly where your coffee comes from.",
+        "cell_3_stat": "48hr",
+        "cell_3_stat_label": "Roasted Fresh",
+        "cell_3_body": "Every bag roasted to order. Never sitting on a shelf, always at peak freshness.",
+        "cell_4_heading": "Subscription Available",
+        "cell_4_body": "Never run out of great coffee. Flexible subscription — pause or cancel anytime.",
+        "cell_5_heading": "Roasted in Yorkshire",
+        "cell_5_body": "British craft meets world-class coffee. Every roast, done in our Yorkshire roastery.",
+        "pill_1": "Free UK Shipping over £25",
+        "pill_2": "Freshness Guarantee",
+        "pill_3": "Ethically Sourced",
+        "pill_4": "Recyclable Packaging"
       }
     },
     "featured_collection": {
@@ -178,7 +123,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -230,125 +175,11 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "scheme-1",
-        "section_color_scheme": "scheme-2",
+        "section_color_scheme": "scheme-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 64,
         "padding_bottom": 64
-      }
-    },
-    "editorial_story_2": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Art of the Pour.",
-            "heading_size": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Artisan design doesn't happen by accident. Every decision at GROUNDS starts with the question: does this make it better?</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "height": "medium",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "scheme-3",
-        "section_color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 64,
-        "padding_bottom": 64
-      }
-    },
-    "brand_values_cols": {
-      "type": "multicolumn",
-      "blocks": {
-        "val_1": {
-          "type": "column",
-          "settings": {
-            "title": "Editorial",
-            "text": "We don't cut corners. Editorial is the baseline, not the exception."
-          }
-        },
-        "val_2": {
-          "type": "column",
-          "settings": {
-            "title": "Warm",
-            "text": "Every piece reflects the attention that GROUNDS puts into its work."
-          }
-        },
-        "val_3": {
-          "type": "column",
-          "settings": {
-            "title": "Artisan",
-            "text": "Purpose-led from the first sketch. Nothing ships without reason."
-          }
-        }
-      },
-      "block_order": [
-        "val_1",
-        "val_2",
-        "val_3"
-      ],
-      "settings": {
-        "title": "What GROUNDS Stands For",
-        "heading_size": "h2",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 72,
-        "padding_bottom": 72
-      }
-    },
-    "social_proof": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "\"I can't go back to anything else. This is what coffee should taste like.\"",
-            "heading_size": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>— Verified customer, GROUNDS</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "full_width": false,
-        "padding_top": 80,
-        "padding_bottom": 80
       }
     },
     "newsletter": {
@@ -383,13 +214,10 @@
   "order": [
     "forge_hero",
     "brand_values",
-    "forge_showcase",
-    "forge_features",
+    "process_steps",
+    "forge_bento",
     "featured_collection",
     "brand_story",
-    "editorial_story_2",
-    "brand_values_cols",
-    "social_proof",
     "newsletter"
   ]
 }
