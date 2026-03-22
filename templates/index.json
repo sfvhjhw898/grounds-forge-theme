@@ -3,8 +3,8 @@
     "forge_hero": {
       "type": "forge-scroll-hero",
       "settings": {
-        "heading": "FOR THE OBSESSIVES.",
-        "subheading": "Single origin \u00b7 small batch \u00b7 roasted to order. Specialty coffee from seed to cup.",
+        "heading": "From Crop to Cup.",
+        "subheading": "artisan · craft · warm — made for Coffee enthusiasts and third-wave coffee drinkers.",
         "scroll_hint": "Scroll to explore",
         "button_label_1": "Shop Coffee",
         "button_link_1": "shopify://collections/all",
@@ -12,64 +12,108 @@
         "button_link_2": "shopify://pages/our-story"
       }
     },
-    "forge_marquee": {
-      "type": "forge-marquee",
-      "settings": {
-        "speed": 32
-      },
+    "brand_values": {
+      "type": "rich-text",
       "blocks": {
-        "p1": {
-          "type": "phrase",
+        "text": {
+          "type": "text",
           "settings": {
-            "phrase": "Single Origin"
-          }
-        },
-        "p2": {
-          "type": "phrase",
-          "settings": {
-            "phrase": "Small Batch"
-          }
-        },
-        "p3": {
-          "type": "phrase",
-          "settings": {
-            "phrase": "Hand Roasted"
-          }
-        },
-        "p4": {
-          "type": "phrase",
-          "settings": {
-            "phrase": "Seasonal Harvests"
-          }
-        },
-        "p5": {
-          "type": "phrase",
-          "settings": {
-            "phrase": "Direct Trade"
-          }
-        },
-        "p6": {
-          "type": "phrase",
-          "settings": {
-            "phrase": "From Seed to Cup"
+            "text": "<p><strong>Artisan  ·  Craft  ·  Warm  ·  Provenance</strong></p>"
           }
         }
       },
       "block_order": [
-        "p1",
-        "p2",
-        "p3",
-        "p4",
-        "p5",
-        "p6"
-      ]
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "process_steps": {
+      "type": "multicolumn",
+      "blocks": {
+        "step_1": {
+          "type": "column",
+          "settings": {
+            "title": "01 — Source",
+            "text": "<p>We travel to origin to select only the finest single-estate lots. Direct relationships with farmers mean better coffee and better pay.</p>"
+          }
+        },
+        "step_2": {
+          "type": "column",
+          "settings": {
+            "title": "02 — Roast",
+            "text": "<p>Every batch is roasted to order in our Yorkshire roastery. Never more than 48 hours between roast and dispatch — always at peak flavour.</p>"
+          }
+        },
+        "step_3": {
+          "type": "column",
+          "settings": {
+            "title": "03 — Deliver",
+            "text": "<p>Sealed in nitrogen-flushed, compostable bags and dispatched same day. From our roastery to your cup, nothing wasted.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "settings": {
+        "title": "From Crop to Cup",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "Explore Our Origins",
+        "button_link": "shopify://pages/our-story",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "forge_bento": {
+      "type": "forge-bento",
+      "settings": {
+        "heading": "Why Our Coffee Tastes Different",
+        "subheading": "GROUNDS — artisan, craft, warm.",
+        "story_link": "shopify://pages/our-story",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "cell_1_eyebrow": "The Specialty Standard",
+        "cell_1_heading": "From Crop to Cup, Nothing Lost.",
+        "cell_1_body": "GROUNDS sources single-origin beans directly from farming cooperatives, paying premium prices for exceptional quality. Every batch is roasted in Yorkshire within 48 hours of your order.",
+        "cell_1_cta": "Explore Our Origins →",
+        "cell_2_heading": "Single Origin",
+        "cell_2_body": "Traceable to the farm, the harvest, the producer. Know exactly where your coffee comes from.",
+        "cell_3_stat": "48hr",
+        "cell_3_stat_label": "Roasted Fresh",
+        "cell_3_body": "Every bag roasted to order. Never sitting on a shelf, always at peak freshness.",
+        "cell_4_heading": "Subscription Available",
+        "cell_4_body": "Never run out of great coffee. Flexible subscription — pause or cancel anytime.",
+        "cell_5_heading": "Roasted in Yorkshire",
+        "cell_5_body": "British craft meets world-class coffee. Every roast, done in our Yorkshire roastery.",
+        "pill_1": "Free UK Shipping over £25",
+        "pill_2": "Freshness Guarantee",
+        "pill_3": "Ethically Sourced",
+        "pill_4": "Recyclable Packaging"
+      }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Current Offerings",
+        "title": "Our Blends",
         "heading_size": "h2",
-        "description": "<p>Seasonal single origins, roasted to order from our East London roastery.</p>",
+        "description": "<p>Our best-selling artisan — made with artisan.</p>",
         "show_description": true,
         "description_style": "subtitle",
         "collection": "all",
@@ -79,160 +123,64 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
+        "color_scheme": "scheme-2",
+        "image_ratio": "portrait",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 72,
+        "padding_top": 64,
         "padding_bottom": 56
       }
     },
-    "forge_process": {
-      "type": "forge-process",
-      "settings": {
-        "eyebrow": "From Origin to Cup",
-        "heading": "Every bag has a story.",
-        "padding_top": 80,
-        "padding_bottom": 80
-      },
+    "brand_story": {
+      "type": "image-with-text",
       "blocks": {
-        "s1": {
-          "type": "step",
+        "heading": {
+          "type": "heading",
           "settings": {
-            "title": "Source",
-            "body": "We work directly with farmers at altitude \u2014 Ethiopia, Colombia, Guatemala. Every harvest selected for complexity, balance, and full traceability."
+            "heading": "From Farm to Your Cup.",
+            "heading_size": "h2"
           }
         },
-        "s2": {
-          "type": "step",
+        "text": {
+          "type": "text",
           "settings": {
-            "title": "Roast",
-            "body": "Small-batch roasting in our East London roastery. Each origin gets its own profile \u2014 nothing generic, nothing compromised."
+            "text": "<p>GROUNDS was built on a simple idea: artisan and craft shouldn't be mutually exclusive. Read about how we got here.</p>",
+            "text_style": "body"
           }
         },
-        "s3": {
-          "type": "step",
+        "button": {
+          "type": "button",
           "settings": {
-            "title": "Brew",
-            "body": "Grind fresh. Brew right. We include full brew guidance with every order \u2014 and we're always here to help you dial it in."
+            "button_label": "Read Our Story",
+            "button_link": "shopify://pages/our-story",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "s1",
-        "s2",
-        "s3"
-      ]
-    },
-    "forge_bento": {
-      "type": "forge-bento",
-      "settings": {
-        "heading": "Coffee Worth Obsessing Over",
-        "subheading": "GROUNDS \u2014 editorial, warm, artisan. For origin-seekers and flavour obsessives.",
-        "story_link": "shopify://pages/our-story",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "cell_1_eyebrow": "The GROUNDS Difference",
-        "cell_1_heading": "Traceability down to the farm.",
-        "cell_1_body": "Every bag of GROUNDS coffee comes with full origin transparency \u2014 farm name, altitude, process, and harvest date. We don't hide behind blends or vague descriptions.",
-        "cell_1_cta": "Meet the Farmers \u2192",
-        "cell_2_heading": "Washed & Natural",
-        "cell_2_body": "We offer both washed and natural process coffees depending on the harvest. Two very different flavour profiles \u2014 both extraordinary.",
-        "cell_3_stat": "1,800m",
-        "cell_3_stat_label": "Average Altitude",
-        "cell_3_body": "Higher altitude means slower ripening, more complexity, and better flavour.",
-        "cell_4_heading": "Roasted to Order",
-        "cell_4_body": "We roast fresh when you order. Never sitting in a warehouse. Always at peak flavour.",
-        "cell_5_heading": "Subscription",
-        "cell_5_body": "New beans every two weeks. Full tasting notes and brew guides included. Cancel anytime.",
-        "pill_1": "Free UK Shipping",
-        "pill_2": "Freshness Guarantee",
-        "pill_3": "Direct Trade",
-        "pill_4": "Zero Waste Packaging"
-      }
-    },
-    "forge_collections": {
-      "type": "forge-collection-cards",
-      "blocks": {
-        "card_1": {
-          "type": "collection_card",
-          "settings": {
-            "fallback_title": "Filter Coffee",
-            "tagline": "Bright, complex, brewed slow."
-          }
-        },
-        "card_2": {
-          "type": "collection_card",
-          "settings": {
-            "fallback_title": "Espresso",
-            "tagline": "Calibrated for milk drinks and straight shots."
-          }
-        },
-        "card_3": {
-          "type": "collection_card",
-          "settings": {
-            "fallback_title": "Subscriptions",
-            "tagline": "New beans every two weeks. Always fresh."
-          }
-        }
-      },
-      "block_order": [
-        "card_1",
-        "card_2",
-        "card_3"
+        "heading",
+        "text",
+        "button"
       ],
       "settings": {
-        "heading": "Find Your Brew",
-        "subheading": "Whether you pour-over or pull shots \u2014 there's a GROUNDS coffee for you.",
-        "color_scheme": "scheme-3",
-        "padding_top": 0,
-        "padding_bottom": 72
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-1",
+        "section_color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 64,
+        "padding_bottom": 64
       }
-    },
-    "forge_testimonials": {
-      "type": "forge-testimonials",
-      "settings": {
-        "eyebrow": "From Our Community",
-        "heading": "What the obsessives say.",
-        "padding_top": 72,
-        "padding_bottom": 72
-      },
-      "blocks": {
-        "t1": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "I've tried single-origin from every major UK roaster. GROUNDS is consistently the most complex, most balanced coffee I've brewed at home.",
-            "name": "J. Winters",
-            "role": "Filter Coffee Enthusiast \u00b7 Edinburgh"
-          }
-        },
-        "t2": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "The subscription is perfect. New beans every two weeks, each with tasting notes and brew guides. It's changed how I think about coffee.",
-            "name": "A. Obi",
-            "role": "Verified Subscriber \u00b7 London"
-          }
-        },
-        "t3": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "Genuinely the best flat white I've made at home. The espresso roast is perfectly calibrated for milk drinks. Will never buy elsewhere.",
-            "name": "H. Kovacs",
-            "role": "Home Barista \u00b7 Bristol"
-          }
-        }
-      },
-      "block_order": [
-        "t1",
-        "t2",
-        "t3"
-      ]
     },
     "newsletter": {
       "type": "newsletter",
@@ -240,14 +188,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "First to know. First to brew.",
+            "heading": "Stay close to GROUNDS.",
             "heading_size": "h2"
           }
         },
         "subheading": {
           "type": "paragraph",
           "settings": {
-            "text": "New harvests, limited lots, and brew guides \u2014 straight to your inbox."
+            "text": "New arrivals, behind-the-scenes, and early access. No noise."
           }
         }
       },
@@ -256,7 +204,7 @@
         "subheading"
       ],
       "settings": {
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-4",
         "full_width": true,
         "padding_top": 56,
         "padding_bottom": 56
@@ -265,12 +213,11 @@
   },
   "order": [
     "forge_hero",
-    "forge_marquee",
-    "featured_collection",
-    "forge_process",
+    "brand_values",
+    "process_steps",
     "forge_bento",
-    "forge_collections",
-    "forge_testimonials",
+    "featured_collection",
+    "brand_story",
     "newsletter"
   ]
 }
