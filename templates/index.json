@@ -4,7 +4,7 @@
       "type": "forge-scroll-hero",
       "settings": {
         "heading": "From Crop to Cup.",
-        "subheading": "artisan · craft · warm — made for Coffee enthusiasts and third-wave coffee drinkers.",
+        "subheading": "artisan · craft · warm — made for Coffee enthusiasts aged 22-40 who appreciate.",
         "scroll_hint": "Scroll to explore",
         "button_label_1": "Shop Coffee",
         "button_link_1": "shopify://collections/all",
@@ -12,26 +12,51 @@
         "button_link_2": "shopify://pages/our-story"
       }
     },
-    "brand_values": {
-      "type": "rich-text",
+    "forge_ticker": {
+      "type": "forge-ticker-section",
       "blocks": {
-        "text": {
-          "type": "text",
+        "item_0": {
+          "type": "item",
           "settings": {
-            "text": "<p><strong>Artisan  ·  Craft  ·  Warm  ·  Provenance</strong></p>"
+            "text": "Ethically Sourced"
+          }
+        },
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "text": "Small Batch"
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "text": "Made With Care"
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "text": "GROUNDS"
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "text": "Free Shipping Over £100"
           }
         }
       },
       "block_order": [
-        "text"
+        "item_0",
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 24,
-        "padding_bottom": 24
+        "color_scheme": "scheme-4",
+        "speed": 40,
+        "direction": "ltr"
       }
     },
     "process_steps": {
@@ -213,7 +238,7 @@
   },
   "order": [
     "forge_hero",
-    "brand_values",
+    "forge_ticker",
     "process_steps",
     "forge_bento",
     "featured_collection",
