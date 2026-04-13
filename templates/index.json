@@ -1,276 +1,74 @@
 {
   "sections": {
-    "forge_hero": {
-      "type": "forge-scroll-hero",
+    "grounds_hero": {
+      "type": "grounds-hero",
       "settings": {
-        "heading": "FOR THE OBSESSIVES.",
-        "subheading": "Single origin \u00b7 small batch \u00b7 roasted to order. Specialty coffee from seed to cup.",
-        "scroll_hint": "Scroll to explore",
-        "button_label_1": "Shop Coffee",
-        "button_link_1": "shopify://collections/all",
-        "button_label_2": "Our Story",
-        "button_link_2": "shopify://pages/our-story"
+        "eyebrow": "From Origin to Cup",
+        "heading": "Great Coffee.",
+        "subheading": "Specialty single-origin beans, roasted to order in our London workshop.",
+        "btn_label": "Shop Coffee",
+        "btn_url": "shopify://collections/all"
       }
     },
-    "forge_marquee": {
-      "type": "forge-marquee",
-      "settings": {
-        "speed": 32
-      },
+    "grounds_brew": {
+      "type": "grounds-brew",
+      "settings": { "eyebrow": "The Craft", "heading": "How to Brew", "intro": "Three methods. Endless ways to enjoy." },
       "blocks": {
-        "p1": {
-          "type": "phrase",
-          "settings": {
-            "phrase": "Single Origin"
-          }
-        },
-        "p2": {
-          "type": "phrase",
-          "settings": {
-            "phrase": "Small Batch"
-          }
-        },
-        "p3": {
-          "type": "phrase",
-          "settings": {
-            "phrase": "Hand Roasted"
-          }
-        },
-        "p4": {
-          "type": "phrase",
-          "settings": {
-            "phrase": "Seasonal Harvests"
-          }
-        },
-        "p5": {
-          "type": "phrase",
-          "settings": {
-            "phrase": "Direct Trade"
-          }
-        },
-        "p6": {
-          "type": "phrase",
-          "settings": {
-            "phrase": "From Seed to Cup"
-          }
-        }
+        "m1": { "type": "method", "settings": { "method": "Pour Over",    "ratio": "1:16", "time": "4 min",  "tip": "Grind medium-fine. Bloom 45s with 2x coffee weight in water." } },
+        "m2": { "type": "method", "settings": { "method": "French Press", "ratio": "1:15", "time": "4 min",  "tip": "Coarse grind. Don't stir after pressing." } },
+        "m3": { "type": "method", "settings": { "method": "Espresso",     "ratio": "1:2",  "time": "28 sec", "tip": "Dial in grind until shot runs 25-32 seconds." } }
       },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3",
-        "p4",
-        "p5",
-        "p6"
-      ]
+      "block_order": ["m1", "m2", "m3"]
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Current Offerings",
+        "title": "Our Coffees",
         "heading_size": "h2",
-        "description": "<p>Seasonal single origins, roasted to order from our East London roastery.</p>",
-        "show_description": true,
-        "description_style": "subtitle",
         "collection": "all",
         "products_to_show": 8,
         "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
         "color_scheme": "scheme-1",
         "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
         "padding_top": 72,
         "padding_bottom": 56
       }
     },
-    "forge_process": {
-      "type": "forge-process",
+    "grounds_origin": {
+      "type": "grounds-origin",
       "settings": {
-        "eyebrow": "From Origin to Cup",
-        "heading": "Every bag has a story.",
-        "padding_top": 80,
-        "padding_bottom": 80
-      },
-      "blocks": {
-        "s1": {
-          "type": "step",
-          "settings": {
-            "title": "Source",
-            "body": "We work directly with farmers at altitude \u2014 Ethiopia, Colombia, Guatemala. Every harvest selected for complexity, balance, and full traceability."
-          }
-        },
-        "s2": {
-          "type": "step",
-          "settings": {
-            "title": "Roast",
-            "body": "Small-batch roasting in our East London roastery. Each origin gets its own profile \u2014 nothing generic, nothing compromised."
-          }
-        },
-        "s3": {
-          "type": "step",
-          "settings": {
-            "title": "Brew",
-            "body": "Grind fresh. Brew right. We include full brew guidance with every order \u2014 and we're always here to help you dial it in."
-          }
-        }
-      },
-      "block_order": [
-        "s1",
-        "s2",
-        "s3"
-      ]
-    },
-    "forge_bento": {
-      "type": "forge-bento",
-      "settings": {
-        "heading": "Coffee Worth Obsessing Over",
-        "subheading": "GROUNDS \u2014 editorial, warm, artisan. For origin-seekers and flavour obsessives.",
-        "story_link": "shopify://pages/our-story",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "cell_1_eyebrow": "The GROUNDS Difference",
-        "cell_1_heading": "Traceability down to the farm.",
-        "cell_1_body": "Every bag of GROUNDS coffee comes with full origin transparency \u2014 farm name, altitude, process, and harvest date. We don't hide behind blends or vague descriptions.",
-        "cell_1_cta": "Meet the Farmers \u2192",
-        "cell_2_heading": "Washed & Natural",
-        "cell_2_body": "We offer both washed and natural process coffees depending on the harvest. Two very different flavour profiles \u2014 both extraordinary.",
-        "cell_3_stat": "1,800m",
-        "cell_3_stat_label": "Average Altitude",
-        "cell_3_body": "Higher altitude means slower ripening, more complexity, and better flavour.",
-        "cell_4_heading": "Roasted to Order",
-        "cell_4_body": "We roast fresh when you order. Never sitting in a warehouse. Always at peak flavour.",
-        "cell_5_heading": "Subscription",
-        "cell_5_body": "New beans every two weeks. Full tasting notes and brew guides included. Cancel anytime.",
-        "pill_1": "Free UK Shipping",
-        "pill_2": "Freshness Guarantee",
-        "pill_3": "Direct Trade",
-        "pill_4": "Zero Waste Packaging"
+        "eyebrow": "Where We Source",
+        "heading": "Beans worth knowing.",
+        "body": "Every coffee we roast is traceable to a single farm or cooperative. We visit our producers, pay above fair trade, and share their stories.",
+        "stat_1_value": "24+",
+        "stat_1_label": "Farms",
+        "stat_2_value": "11",
+        "stat_2_label": "Countries",
+        "stat_3_value": "2016",
+        "stat_3_label": "Since",
+        "cta_label": "Our Sourcing Story",
+        "cta_url": "shopify://pages/our-story"
       }
     },
-    "forge_collections": {
-      "type": "forge-collection-cards",
+    "grounds_reviews": {
+      "type": "grounds-reviews",
+      "settings": { "eyebrow": "From Our Regulars", "heading": "What they're brewing." },
       "blocks": {
-        "card_1": {
-          "type": "collection_card",
-          "settings": {
-            "fallback_title": "Filter Coffee",
-            "tagline": "Bright, complex, brewed slow."
-          }
-        },
-        "card_2": {
-          "type": "collection_card",
-          "settings": {
-            "fallback_title": "Espresso",
-            "tagline": "Calibrated for milk drinks and straight shots."
-          }
-        },
-        "card_3": {
-          "type": "collection_card",
-          "settings": {
-            "fallback_title": "Subscriptions",
-            "tagline": "New beans every two weeks. Always fresh."
-          }
-        }
+        "r1": { "type": "review", "settings": { "quote": "The Ethiopia Yirgacheffe is the best filter coffee I've ever had at home.", "name": "James M.", "product": "Ethiopia Yirgacheffe" } },
+        "r2": { "type": "review", "settings": { "quote": "I've subscribed for 2 years. Always fresh, always excellent.", "name": "Sarah K.", "product": "Monthly Subscription" } },
+        "r3": { "type": "review", "settings": { "quote": "The brew guide cards that come with each order are a brilliant touch.", "name": "Tom H.", "product": "Colombia La Palma" } }
       },
-      "block_order": [
-        "card_1",
-        "card_2",
-        "card_3"
-      ],
-      "settings": {
-        "heading": "Find Your Brew",
-        "subheading": "Whether you pour-over or pull shots \u2014 there's a GROUNDS coffee for you.",
-        "color_scheme": "scheme-3",
-        "padding_top": 0,
-        "padding_bottom": 72
-      }
-    },
-    "forge_testimonials": {
-      "type": "forge-testimonials",
-      "settings": {
-        "eyebrow": "From Our Community",
-        "heading": "What the obsessives say.",
-        "padding_top": 72,
-        "padding_bottom": 72
-      },
-      "blocks": {
-        "t1": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "I've tried single-origin from every major UK roaster. GROUNDS is consistently the most complex, most balanced coffee I've brewed at home.",
-            "name": "J. Winters",
-            "role": "Filter Coffee Enthusiast \u00b7 Edinburgh"
-          }
-        },
-        "t2": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "The subscription is perfect. New beans every two weeks, each with tasting notes and brew guides. It's changed how I think about coffee.",
-            "name": "A. Obi",
-            "role": "Verified Subscriber \u00b7 London"
-          }
-        },
-        "t3": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "Genuinely the best flat white I've made at home. The espresso roast is perfectly calibrated for milk drinks. Will never buy elsewhere.",
-            "name": "H. Kovacs",
-            "role": "Home Barista \u00b7 Bristol"
-          }
-        }
-      },
-      "block_order": [
-        "t1",
-        "t2",
-        "t3"
-      ]
+      "block_order": ["r1", "r2", "r3"]
     },
     "newsletter": {
       "type": "newsletter",
       "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "First to know. First to brew.",
-            "heading_size": "h2"
-          }
-        },
-        "subheading": {
-          "type": "paragraph",
-          "settings": {
-            "text": "New harvests, limited lots, and brew guides \u2014 straight to your inbox."
-          }
-        }
+        "heading": { "type": "heading",   "settings": { "heading": "Roasted fresh. Delivered to you.", "heading_size": "h2" } },
+        "sub":     { "type": "paragraph", "settings": { "text": "New origins, brewing guides, and subscriber-only offers." } }
       },
-      "block_order": [
-        "heading",
-        "subheading"
-      ],
-      "settings": {
-        "color_scheme": "scheme-5",
-        "full_width": true,
-        "padding_top": 56,
-        "padding_bottom": 56
-      }
+      "block_order": ["heading", "sub"],
+      "settings": { "color_scheme": "scheme-5", "full_width": true, "padding_top": 56, "padding_bottom": 56 }
     }
   },
-  "order": [
-    "forge_hero",
-    "forge_marquee",
-    "featured_collection",
-    "forge_process",
-    "forge_bento",
-    "forge_collections",
-    "forge_testimonials",
-    "newsletter"
-  ]
+  "order": ["grounds_hero", "grounds_brew", "featured_collection", "grounds_origin", "grounds_reviews", "newsletter"]
 }
