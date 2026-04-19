@@ -1,74 +1,248 @@
 {
   "sections": {
-    "grounds_hero": {
-      "type": "grounds-hero",
+    "forge_hero": {
+      "type": "forge-scroll-hero",
       "settings": {
-        "eyebrow": "From Origin to Cup",
-        "heading": "Great Coffee.",
-        "subheading": "Specialty single-origin beans, roasted to order in our London workshop.",
-        "btn_label": "Shop Coffee",
-        "btn_url": "shopify://collections/all"
+        "heading": "From Crop to Cup.",
+        "subheading": "artisan · craft · warm — made for Coffee enthusiasts aged 22-40 who appreciate.",
+        "scroll_hint": "Scroll to explore",
+        "button_label_1": "Shop Coffee",
+        "button_link_1": "shopify://collections/all",
+        "button_label_2": "Our Story",
+        "button_link_2": "shopify://pages/our-story"
       }
     },
-    "grounds_brew": {
-      "type": "grounds-brew",
-      "settings": { "eyebrow": "The Craft", "heading": "How to Brew", "intro": "Three methods. Endless ways to enjoy." },
+    "forge_ticker": {
+      "type": "forge-ticker-section",
       "blocks": {
-        "m1": { "type": "method", "settings": { "method": "Pour Over",    "ratio": "1:16", "time": "4 min",  "tip": "Grind medium-fine. Bloom 45s with 2x coffee weight in water." } },
-        "m2": { "type": "method", "settings": { "method": "French Press", "ratio": "1:15", "time": "4 min",  "tip": "Coarse grind. Don't stir after pressing." } },
-        "m3": { "type": "method", "settings": { "method": "Espresso",     "ratio": "1:2",  "time": "28 sec", "tip": "Dial in grind until shot runs 25-32 seconds." } }
+        "item_0": {
+          "type": "item",
+          "settings": {
+            "text": "Ethically Sourced"
+          }
+        },
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "text": "Small Batch"
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "text": "Made With Care"
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "text": "GROUNDS"
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "text": "Free Shipping Over £100"
+          }
+        }
       },
-      "block_order": ["m1", "m2", "m3"]
+      "block_order": [
+        "item_0",
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "speed": 40,
+        "direction": "ltr"
+      }
+    },
+    "process_steps": {
+      "type": "multicolumn",
+      "blocks": {
+        "step_1": {
+          "type": "column",
+          "settings": {
+            "title": "01 — Source",
+            "text": "<p>We travel to origin to select only the finest single-estate lots. Direct relationships with farmers mean better coffee and better pay.</p>"
+          }
+        },
+        "step_2": {
+          "type": "column",
+          "settings": {
+            "title": "02 — Roast",
+            "text": "<p>Every batch is roasted to order in our Yorkshire roastery. Never more than 48 hours between roast and dispatch — always at peak flavour.</p>"
+          }
+        },
+        "step_3": {
+          "type": "column",
+          "settings": {
+            "title": "03 — Deliver",
+            "text": "<p>Sealed in nitrogen-flushed, compostable bags and dispatched same day. From our roastery to your cup, nothing wasted.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "settings": {
+        "title": "From Crop to Cup",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "Explore Our Origins",
+        "button_link": "shopify://pages/our-story",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "forge_bento": {
+      "type": "forge-bento",
+      "settings": {
+        "heading": "Why Our Coffee Tastes Different",
+        "subheading": "GROUNDS — artisan, craft, warm.",
+        "story_link": "shopify://pages/our-story",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "cell_1_eyebrow": "The Specialty Standard",
+        "cell_1_heading": "From Crop to Cup, Nothing Lost.",
+        "cell_1_body": "GROUNDS sources single-origin beans directly from farming cooperatives, paying premium prices for exceptional quality. Every batch is roasted in Yorkshire within 48 hours of your order.",
+        "cell_1_cta": "Explore Our Origins →",
+        "cell_2_heading": "Single Origin",
+        "cell_2_body": "Traceable to the farm, the harvest, the producer. Know exactly where your coffee comes from.",
+        "cell_3_stat": "48hr",
+        "cell_3_stat_label": "Roasted Fresh",
+        "cell_3_body": "Every bag roasted to order. Never sitting on a shelf, always at peak freshness.",
+        "cell_4_heading": "Subscription Available",
+        "cell_4_body": "Never run out of great coffee. Flexible subscription — pause or cancel anytime.",
+        "cell_5_heading": "Roasted in Yorkshire",
+        "cell_5_body": "British craft meets world-class coffee. Every roast, done in our Yorkshire roastery.",
+        "pill_1": "Free UK Shipping over £25",
+        "pill_2": "Freshness Guarantee",
+        "pill_3": "Ethically Sourced",
+        "pill_4": "Recyclable Packaging"
+      }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Our Coffees",
+        "title": "Our Blends",
         "heading_size": "h2",
+        "description": "<p>Our best-selling artisan — made with artisan.</p>",
+        "show_description": true,
+        "description_style": "subtitle",
         "collection": "all",
         "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "padding_top": 72,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-2",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 64,
         "padding_bottom": 56
       }
     },
-    "grounds_origin": {
-      "type": "grounds-origin",
-      "settings": {
-        "eyebrow": "Where We Source",
-        "heading": "Beans worth knowing.",
-        "body": "Every coffee we roast is traceable to a single farm or cooperative. We visit our producers, pay above fair trade, and share their stories.",
-        "stat_1_value": "24+",
-        "stat_1_label": "Farms",
-        "stat_2_value": "11",
-        "stat_2_label": "Countries",
-        "stat_3_value": "2016",
-        "stat_3_label": "Since",
-        "cta_label": "Our Sourcing Story",
-        "cta_url": "shopify://pages/our-story"
-      }
-    },
-    "grounds_reviews": {
-      "type": "grounds-reviews",
-      "settings": { "eyebrow": "From Our Regulars", "heading": "What they're brewing." },
+    "brand_story": {
+      "type": "image-with-text",
       "blocks": {
-        "r1": { "type": "review", "settings": { "quote": "The Ethiopia Yirgacheffe is the best filter coffee I've ever had at home.", "name": "James M.", "product": "Ethiopia Yirgacheffe" } },
-        "r2": { "type": "review", "settings": { "quote": "I've subscribed for 2 years. Always fresh, always excellent.", "name": "Sarah K.", "product": "Monthly Subscription" } },
-        "r3": { "type": "review", "settings": { "quote": "The brew guide cards that come with each order are a brilliant touch.", "name": "Tom H.", "product": "Colombia La Palma" } }
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "From Farm to Your Cup.",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GROUNDS was built on a simple idea: artisan and craft shouldn't be mutually exclusive. Read about how we got here.</p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read Our Story",
+            "button_link": "shopify://pages/our-story",
+            "button_style_secondary": false
+          }
+        }
       },
-      "block_order": ["r1", "r2", "r3"]
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-1",
+        "section_color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
     "newsletter": {
       "type": "newsletter",
       "blocks": {
-        "heading": { "type": "heading",   "settings": { "heading": "Roasted fresh. Delivered to you.", "heading_size": "h2" } },
-        "sub":     { "type": "paragraph", "settings": { "text": "New origins, brewing guides, and subscriber-only offers." } }
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Stay close to GROUNDS.",
+            "heading_size": "h2"
+          }
+        },
+        "subheading": {
+          "type": "paragraph",
+          "settings": {
+            "text": "New arrivals, behind-the-scenes, and early access. No noise."
+          }
+        }
       },
-      "block_order": ["heading", "sub"],
-      "settings": { "color_scheme": "scheme-5", "full_width": true, "padding_top": 56, "padding_bottom": 56 }
+      "block_order": [
+        "heading",
+        "subheading"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
     }
   },
-  "order": ["grounds_hero", "grounds_brew", "featured_collection", "grounds_origin", "grounds_reviews", "newsletter"]
+  "order": [
+    "forge_hero",
+    "forge_ticker",
+    "process_steps",
+    "forge_bento",
+    "featured_collection",
+    "brand_story",
+    "newsletter"
+  ]
 }
