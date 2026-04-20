@@ -40,18 +40,18 @@
           "type": "description",
           "settings": {}
         },
-        "collapsible_tab_1": {
+        "tab_care": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Materials & Care",
+            "heading": "Brewing Guide",
             "content": ""
           }
         },
-        "collapsible_tab_2": {
+        "tab_shipping": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Shipping & Returns",
-            "content": "Free UK shipping on orders over £40. Returns accepted within 30 days of delivery."
+            "heading": "Delivery & Returns",
+            "content": "Free UK shipping on orders over £25. Freshness guaranteed."
           }
         },
         "share": {
@@ -69,14 +69,14 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "collapsible_tab_1",
-        "collapsible_tab_2",
+        "tab_care",
+        "tab_shipping",
         "share"
       ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "media_size": "large",
+        "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "stacked",
@@ -84,9 +84,21 @@
         "media_position": "left",
         "image_zoom": "lightbox",
         "hide_variants": false,
-        "enable_video_looping": true,
+        "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "brand-cta": {
+      "type": "forge-editorial-cta",
+      "settings": {
+        "heading": "The GROUNDS Story",
+        "subtext": "Single origin. Ethically sourced. Roasted in small batches in Yorkshire.",
+        "button_label": "Read Our Story",
+        "button_url": "shopify://pages/our-story",
+        "color_scheme": "scheme-2",
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "related-products": {
@@ -103,13 +115,14 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 28
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     }
   },
   "order": [
     "main",
+    "brand-cta",
     "related-products"
   ]
 }
